@@ -34,5 +34,6 @@ Use PyCaret to determine top performing classifier model on subset of reddit dat
 ## Tableau Dashboard
 link : https://public.tableau.com/app/profile/sodiq.alagbada/viz/reddit_16659191519010/Dashboard1?publish=yes
 
+![Tableau SC](https://user-images.githubusercontent.com/104107204/196059576-ff0485ed-948b-4d5a-a0ee-598bf4d91fa4.jpeg)
 
 
