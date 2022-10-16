@@ -31,6 +31,8 @@ Use PyCaret to determine top performing classifier model on subset of reddit dat
 - Manually train and tune hyperparameters of classifier model (Tim & Joe)
 - Host on Heroku (Everyone)
 
+## Tableau Dashboard
+link : https://public.tableau.com/app/profile/sodiq.alagbada/viz/reddit_16659191519010/Dashboard1?publish=yes
 
 
 
