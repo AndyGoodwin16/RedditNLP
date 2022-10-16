@@ -2,7 +2,6 @@ import pandas as pd
 import json
 counter = 1
 
-
 #read the json file into multiple chunks of 10000 lines
 chunks = pd.read_json('corpus-webis-tldr-17.json', lines=True, chunksize = 100000)
 
