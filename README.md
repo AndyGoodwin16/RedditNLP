@@ -9,7 +9,7 @@ https://huggingface.co/datasets/reddit/tree/main
 
 ## Backend ETL
 
-Load into Databricks via Hugging Face endpoint for tokenization with PySpark. Pandas for data preprocessing and data manipulation. Create a subset of data that holds the top 10 subreddits for classifier model. Load both the full dataset and the subset dataset into Amazon Web Services postgreSQL database. Access database via pgAdmin on local machine and connect to Tableau for visualizations.
+Load into Databricks via Hugging Face endpoint for tokenization with PySpark. PySpark and Pandas for data preprocessing and data manipulation. Create a subset of data that holds the top 10 subreddits for classifier model. Load both the full dataset and the subset dataset into Amazon Web Services postgreSQL database. Access database via pgAdmin on local machine and connect to Tableau for visualizations.
 
 ## Visualizations
 
@@ -17,19 +17,16 @@ Visualize full dataset trends with Tableau - what words are most popular per sub
 
 ## Machine Learning Model
 
-Use PyCaret to determine top performing classifier model on subset of reddit data containing the top 10 subreddits by post volume. Based on the top performing PyCaret model, manually train a classifier model to predict, given a new post, what subreddit to which it most likely belongs. Host application on Heroku.
+Use Naive Bayes and Multiclass Classification Evaluator to determine top performing classifier model on subset of reddit data containing the top 10 subreddits by post volume. Based on the top performing Multiclass Classification Evaluator model, manually train a classifier model to predict, given a new post, what subreddit to which it most likely belongs. 
 
 ## Division of Responsibilities (Flexible)
 
-- Load dataset into Databricks (Everyone)
-- Tokenize with PySpark (Everyone)
-- Preprocess with Pandas (Andy)
-- Load into AWS postgreSQL database (Everyone)
-- Connect database to Tableau (Sodiq)
+- Tokenize and Hashing with PySpark (Everyone)
+- Preprocess with Pandas and PySpark (Andy)
+- Load data from AWS to Databricks (Everyone)
 - Visualize with Tableau (Sodiq)
-- Use PyCaret to sift through classifier models (Tim & Joe)
+- Use Multiclass Classification Evaluator to sift through classifier models (Tim & Joe)
 - Manually train and tune hyperparameters of classifier model (Tim & Joe)
-- Host on Heroku (Everyone)
 
 ## Tableau Dashboard
 link : https://public.tableau.com/app/profile/sodiq.alagbada/viz/reddit_16659191519010/Dashboard1?publish=yes
